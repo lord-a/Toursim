@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="738.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.userinterface.LoginPagecontroller">
+   <children>
+      <ImageView fitHeight="40.0" fitWidth="149.0" layoutX="311.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="369.0" layoutY="55.0" text="Touch" textFill="#a0a2ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="335.0" layoutY="55.0" text="GetIn" textFill="#2196f3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="reg" layoutX="665.0" layoutY="22.0" onAction="#onButtonClicked" style="-fx-background-color: #151928;" text="Sign UP" textFill="#a0a2ab" />
+      <JFXButton layoutX="560.0" layoutY="25.0" text="Not member?" textFill="#a0a2ab">
+         <padding>
+            <Insets top="5.0" />
+         </padding></JFXButton>
+      <JFXButton fx:id="back" layoutX="48.0" layoutY="22.0" onAction="#onButtonClicked" text="Back to preview" textFill="#a0a2ab" />
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="15.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../projfiles/down-512.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="Username1" layoutX="269.0" layoutY="169.0" maxWidth="211.0" minWidth="211.0" onKeyReleased="#handlekeyreleased" prefHeight="31.0" prefWidth="211.0" promptText="Username" style="-fx-background-color: #e3f2f9;" unFocusColor="#a0a2ab">
+         <focusColor>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </focusColor></JFXTextField>
+      <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="230.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/person.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="46.0" layoutX="223.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/lock-logo.png" />
+         </image>
+      </ImageView>
+      <JFXCheckBox layoutX="208.0" layoutY="295.0" prefHeight="26.0" prefWidth="158.0" text="Remember me" textFill="#a0a2ab">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></JFXCheckBox>
+      <JFXButton fx:id="log" layoutX="408.0" layoutY="295.0" onAction="#onButtonClicked" prefHeight="25.0" prefWidth="66.0" style="-fx-background-color: #3C58FA;" text="Log in" textFill="WHITE" textOverrun="CLIP" />
+      <JFXButton layoutX="287.0" layoutY="347.0" prefHeight="25.0" prefWidth="144.0" text="Forgot password??" textFill="#a0a2ab" underline="true" />
+      <JFXPasswordField fx:id="Password1" focusColor="#a0a2ab" layoutX="269.0" layoutY="212.0" maxWidth="211.0" minWidth="211.0" onKeyReleased="#handlekeyreleased" prefHeight="31.0" prefWidth="211.0" promptText="Password" style="-fx-background-color: #e3f2f9;" unFocusColor="#a0a2ab" />
+      <Label fx:id="lb" layoutX="279.0" layoutY="252.0" prefHeight="16.0" prefWidth="203.0" textFill="#da0101" />
+   </children>
+</AnchorPane>

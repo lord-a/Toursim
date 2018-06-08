@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="738.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.userinterface.signupcontroller">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="600.0" layoutX="141.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/5-2-mountain-transparent.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="312.0" layoutY="28.0" text="Sign up">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="83.0" text="Username" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="186.0" text="Password" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="136.0" text="Mail" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="username1" layoutX="33.0" layoutY="101.0" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+      <JFXTextField fx:id="mail" layoutX="33.0" layoutY="153.0" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+      <JFXButton fx:id="next1" layoutX="43.0" layoutY="316.0" onAction="#buttonclicked" style="-fx-background-color: #f13953;" text="Sign UP" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Line endX="100.0" layoutX="244.0" layoutY="345.0" startX="-100.0" stroke="#f22244" style="-fx-fill: #f13953;" />
+      <ImageView fitHeight="400.0" fitWidth="500.0" layoutX="271.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/kisspng-mount-rinjani-haute-route-hiking-glacier-and-water-hiking-5abe0d481d25f2.9042105815224046801194.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="238.0" text="Re-Type password" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="25.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../projfiles/down-512.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="back1" layoutX="58.0" layoutY="32.0" onAction="#buttonclicked" style="-fx-background-color: #ffffff;" text="Back to preview" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXPasswordField fx:id="pass1" layoutX="33.0" layoutY="204.0" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+      <JFXPasswordField fx:id="pass2" layoutX="33.0" layoutY="256.0" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+      <Label fx:id="wrong" layoutX="51.0" layoutY="64.0" prefHeight="16.0" prefWidth="282.0" textFill="#f50101" />
+   </children>
+</AnchorPane>

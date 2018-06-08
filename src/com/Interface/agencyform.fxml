@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="738.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.userinterface.agencyformcontroller">
+   <children>
+      <ImageView fitHeight="209.0" fitWidth="225.0" layoutX="369.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/compprofile.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="submit" layoutX="58.0" layoutY="340.0" onAction="#onbuttonclicked" style="-fx-background-color: #f13953;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="328.0" layoutY="24.0" text="Registration">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="420.0" layoutY="75.0" text="E-Mail" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="update" layoutX="648.0" layoutY="326.0" onAction="#onbuttonclicked" style="-fx-background-color: #f13953;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="367.0" layoutY="331.0" text="Wanna update your information?" textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="520.0" layoutY="356.0" startX="-100.0" stroke="#f22244" style="-fx-fill: #f13953;" />
+      <ImageView fitHeight="40.0" fitWidth="38.0" layoutX="25.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+         <image>
+            <Image url="@../projfiles/down-512.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="cancel1" layoutX="58.0" layoutY="32.0" onAction="#onbuttonclicked" text="Back " textFill="#a2a2a2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="email1" layoutX="354.0" layoutY="93.0" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+      <VBox layoutX="81.0" layoutY="84.0" prefHeight="255.0" prefWidth="200.0" spacing="5.0">
+         <children>
+            <Label text="Name of Organization" textFill="#a2a2a2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="name1" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+            <Label text="Type" textFill="#a2a2a2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="type1" prefHeight="31.0" prefWidth="200.0" promptText="Type" visibleRowCount="5" VBox.vgrow="ALWAYS" />
+            <Label text="Location" textFill="#a2a2a2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="8.0" />
+               </VBox.margin>
+            </Label>
+            <JFXTextField fx:id="place1" maxWidth="200.0" minWidth="200.0" onKeyReleased="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+            <Label text="Contact No:" textFill="#a2a2a2">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="phone1" maxWidth="200.0" minWidth="200.0" onKeyPressed="#handlekeyrelease" prefHeight="31.0" prefWidth="200.0" unFocusColor="#a2a2a2" />
+         </children>
+      </VBox>
+      <Label fx:id="err" layoutX="79.0" layoutY="67.0" prefHeight="16.0" prefWidth="255.0" textFill="#d70e0e" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.userinterface.lastclass">
+    <children>
+        <Text fill="WHITE" layoutX="73.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have requested for services to" />
+        <Text fill="#f5f5f5" layoutX="73.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thank You" />
+        <ImageView fitHeight="52.0" fitWidth="200.0" layoutX="202.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../projfiles/logo2.png" />
+            </image>
+        </ImageView>
+        <Text fill="#a1a2ab" layoutX="237.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GetInTouch" wrappingWidth="80.7626953125" />
+        <Text fill="#a1a2ab" layoutX="202.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A Travelers Companion" wrappingWidth="165.5458984375" />
+        <Label fx:id="org" layoutX="306.0" layoutY="163.0" prefHeight="16.0" prefWidth="189.0" textFill="#c6baba" />
+    </children>
+</AnchorPane>

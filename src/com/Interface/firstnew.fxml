@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="738.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.userinterface.firstpagecontroller">
+   <children>
+      <Label layoutX="345.0" layoutY="65.0" text="GetIn" textFill="#2196f3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="379.0" layoutY="65.0" text="Touch" textFill="#a0a2ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="149.0" layoutX="321.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../projfiles/logo2.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="198.0" layoutY="336.0" text="Traveler" textFill="#a0a2ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="470.0" layoutY="336.0" text="Agency" textFill="#a0a2ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="270.0" layoutY="138.0" text="Select your category." textFill="#a0a2ab">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="trav" layoutX="148.0" layoutY="147.0" onAction="#onclicked" onMouseClicked="#onclicked" onMousePressed="#onclicked" prefHeight="169.0" prefWidth="190.0">
+         <graphic>
+            <ImageView fitHeight="162.0" fitWidth="218.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../projfiles/Travel_Character_Vector_Set.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="agen" layoutX="369.0" layoutY="136.0" onAction="#onclicked" onMouseClicked="#onclicked" onMousePressed="#onclicked" prefHeight="194.0" prefWidth="254.0">
+         <graphic>
+            <ImageView fitHeight="162.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../projfiles/compprofile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
